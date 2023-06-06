@@ -8,14 +8,14 @@ LABEL cohort="MTEC cohort 16"
 LABEL animal="Possum"
 
 # Working directory
-WORKDIR /usr/src/app
+#WORKDIR /mydockerimage
 
 # Copy files
-COPY package*.json ./
+#COPY package*.json ./
 COPY index.html ./
 
 # Install dependencies
-RUN npm install
+RUN npm i -y
 
 # Copy remaining code files
 COPY . .
