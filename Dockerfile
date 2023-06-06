@@ -1,5 +1,6 @@
 # Base image
-FROM node
+#FROM ubuntu
+FROM node:latest
 
 # Metadata
 LABEL maintainer="gabserna"
@@ -18,7 +19,8 @@ COPY index.html ./
 EXPOSE 3535
 
 # Install dependencies
-RUN npm i -y
+RUN npm install
 
 # Command to run the app
-CMD ["node", "server.js"]
+CMD ["npm", "start"]
+#CMD ["node", "server.js"]
