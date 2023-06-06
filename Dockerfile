@@ -1,11 +1,11 @@
+# Base image
+FROM node:latest
+
 # Metadata
 LABEL maintainer="gabserna"
 LABEL description="My very first Docker Image"
 LABEL cohort="MTEC cohort 16"
 LABEL animal="Possum"
-
-# Base image
-FROM node:latest
 
 # Working directory
 WORKDIR /usr/src/app
