@@ -1,5 +1,5 @@
 # Base image
-FROM node:latest
+FROM node
 
 # Metadata
 LABEL maintainer="gabserna"
@@ -8,20 +8,17 @@ LABEL cohort="MTEC cohort 16"
 LABEL animal="Possum"
 
 # Working directory
-#WORKDIR /mydockerimage
+WORKDIR /app
 
 # Copy files
-#COPY package*.json ./
+COPY package.json ./
 COPY index.html ./
-
-# Install dependencies
-RUN npm i -y
-
-# Copy remaining code files
-COPY . .
 
 # Expose port for the app to listen on
 EXPOSE 3535
 
+# Install dependencies
+RUN npm i -y
+
 # Command to run the app
-CMD ["npm", "start"]
+CMD ["node", "server.js"]
