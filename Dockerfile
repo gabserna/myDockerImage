@@ -17,6 +17,7 @@ COPY index.html ./
 
 # Expose port for the app to listen on
 EXPOSE 3535
+COPY . .
 
 # Install dependencies
 RUN npm install
