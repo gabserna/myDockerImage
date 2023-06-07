@@ -35,3 +35,9 @@ Email Blane (bnelson@mtec.edu) the following:
 A URL to your github repo that contains the complete lab/project
 
 when you finish the lab please email a copy to me and not blaine: chase.spencer@mtec.edu
+
+
+
+docker ps -a   #shows all images
+docker stop <app name>  #stop image
+docker rm <app name>    #remove and release image
