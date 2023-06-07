@@ -31,11 +31,6 @@ Create a readme.md that shows the exact Docker command line (with options) for t
 
 (10 points for on-time)
 Due: Wed 7th June, 2023
-Email Blane (bnelson@mtec.edu) the following:
-A URL to your github repo that contains the complete lab/project
-
-when you finish the lab please email a copy to me and not blaine: chase.spencer@mtec.edu
-
 
 
 docker ps -a   #shows all images
