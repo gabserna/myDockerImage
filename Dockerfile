@@ -1,5 +1,4 @@
 # Base image
-#FROM ubuntu
 FROM node:latest
 
 # Metadata
@@ -9,15 +8,15 @@ LABEL cohort="MTEC cohort 16"
 LABEL animal="Possum"
 
 # Working directory
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # Copy files
-COPY package.json ./
-COPY index.html ./
+COPY . .
+#COPY package.json ./
+#COPY index.html ./
 
 # Expose port for the app to listen on
 EXPOSE 3535
-COPY . .
 
 # Install dependencies
 RUN npm install
